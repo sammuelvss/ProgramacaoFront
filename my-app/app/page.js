@@ -1,14 +1,11 @@
-import Profile from "@/components/Profile";
-
+import Profile from "../components/Profile";
+import "style.css";
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-white text-black">
-      <h1>Amazing scientists</h1>
-      <section className="flex gap-4">
-        <Profile />
-        <Profile />
-        <Profile />
-      </section>
+    <div>
+      <h1>Site criado para a disciplina Programação Front-End</h1>  
+        <Profile />    
     </div>
   );
 }
+
