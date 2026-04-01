@@ -5,7 +5,7 @@ export default function Dado({ valor }) {
   const caminhoImagem = `/dado${numeroSeguro}.png`;
 
   return (
-    <div className="dado-container">
+    <div>
       <Image 
         src={caminhoImagem} 
         alt={`Dado com valor ${numeroSeguro}`} 
