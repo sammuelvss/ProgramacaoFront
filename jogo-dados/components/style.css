@@ -172,3 +172,10 @@ body {
     background-color: rgb(255, 255, 255);
     transform: scale(1.05);
 }
+
+.frase-vencedor {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}

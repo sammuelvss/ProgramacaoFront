@@ -108,11 +108,20 @@ export default function JogoDados() {
 
         {turno === 'FIM' && (
           <div className="placar-final">
-            <p>Placar: Jogador A ({vitoriasA}) x ({vitoriasB}) Jogador B</p>
-            <button onClick={reiniciar} className="botao-reiniciar">
-              Jogar Novamente
-            </button>
-          </div>
+    
+           <h3 className="frase-vencedor">
+            {vitoriasA > vitoriasB && "O Jogador A venceu a partida!"}
+            {vitoriasB > vitoriasA && "O Jogador B venceu a partida!"}
+            {vitoriasA === vitoriasB && "A partida terminou em empate!"}
+           </h3>
+    
+          <p className="texto-placar">Placar Final: {vitoriasA} x {vitoriasB}</p>
+    
+           <button onClick={reiniciar} className="botao-reiniciar">
+            Jogar Novamente
+           </button>
+    
+        </div>
         )}
       </div>
     </div>
