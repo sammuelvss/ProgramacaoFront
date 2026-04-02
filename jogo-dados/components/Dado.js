@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Dado({ valor }) {
-  const numeroSeguro = (valor >= 0 && valor <= 6) ? valor : 1;
+  const numeroSeguro = (valor >= 1 && valor <= 6) ? valor : 1;
   const caminhoImagem = `/dado${numeroSeguro}.png`;
 
   return (
