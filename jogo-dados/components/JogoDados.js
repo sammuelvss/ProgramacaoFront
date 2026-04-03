@@ -95,7 +95,7 @@ export default function JogoDados() {
               <Dado valor={dadoB1} />
               <Dado valor={dadoB2} />
             </div>
-            {turno !== 'FIM' && <p className="texto-resultado">{resultadoA}</p>}
+            {turno !== 'FIM' && <p className="texto-resultado">{resultadoB}</p>}
             <button 
               onClick={jogarB} 
               disabled={turno !== 'B'}
